@@ -100,7 +100,8 @@ bike1 = Create_bike(100, 'Univega', 'Alpina', 1999, Condition.OKAY.value)
     
     
 bike1.set_sale_price()
-    
-    
-print(bike1.sell())
+
+print('Price for ' + Condition(bike1.condition).name + ' conditioned bike is: ' + str('${:,.2f}'.format(bike1.sell())))
+
+# print('${:,.2f}'.format(bike1.sell()))
 
